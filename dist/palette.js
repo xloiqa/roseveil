@@ -24,7 +24,7 @@ exports.dark = {
     scrollActiveDark: '#6c7086',
     mauve: '#7c6a8a',
     subtext0: '#7f849c',
-    teal: '#68b6b2',
+    teal: '#72c1bd',
     brightCyan: '#6bd7ca',
     brightBlue: '#74a8fc',
     brightGreen: '#89d88b',
@@ -38,51 +38,51 @@ exports.dark = {
     brightWhite: '#bac2de',
     roseHover: '#b99098',
     buttonSecondaryHover: '#56596e',
-    roseMid: '#9e838e',
+    roseMid: '#b09199',
     red: '#cc7c8a',
     neutral: '#cccccc',
     text: '#cdd6f4',
     parameter: '#d6d6dd',
     e4base: '#e4e4e4',
     pink: '#cd82c9',
-    peachWarm: '#cfa96f',
+    peachWarm: '#dab57b',
     brightYellow: '#ebd391',
-    peach: '#d2936e',
+    peach: '#de9f75',
     tabActiveFg: '#dccacc',
     sponsor: '#f5c2e7',
     roseLight: '#f5e0dc',
     errorRed: '#f14c4c',
     brightMagenta: '#f2aede',
     brightRed: '#f37799',
-    metaTag: '#d6ac4c',
-    yellow: '#d6ac4c',
-    sapphire: '#70a9e5',
+    metaTag: '#e4b75f',
+    yellow: '#e4b75f',
+    sapphire: '#79b3ef',
     white: '#ffffff',
 };
 exports.light = {
     // Backgrounds — lightest to darkest (inverted polarity vs dark)
-    crust: '#eee7e5', // inputs / quickInput (lightest surface)
-    darker: '#dcd2d3', // unfocused inactive tab (recedes)
-    mantle: '#dfd5d6', // sidebar, activity bar, panel, title bar, tabs header
+    crust: '#eae3e1', // inputs / quickInput (lightest surface)
+    darker: '#d8cecf', // unfocused inactive tab (recedes)
+    mantle: '#dbd1d2', // sidebar, activity bar, panel, title bar, tabs header
     darkest: '#2a2330', // shadow + dark contrast-fg on accent backgrounds
-    base: '#e8e0de', // editor bg, terminal bg, minimap; low-glare matte paper
+    base: '#e4dcda', // editor bg, terminal bg, minimap; low-glare matte paper
     buttonFg: '#fff7f7', // button / extension button foreground
-    listHover: '#e3d9da', // list hover, tab hover, statusBar item hover
-    surface1: '#e2d9d8', // hover widgets, breadcrumb picker, inlay hints; distinct from editor
-    lineHighlight: '#ded5d4', // editor line highlight; visible without becoming a stripe
-    inactiveSelection: '#d9cfd2', // editor inactive selection
+    listHover: '#dfd5d6', // list hover, tab hover, statusBar item hover
+    surface1: '#ded5d4', // hover widgets, breadcrumb picker, inlay hints; distinct from editor
+    lineHighlight: '#dad1d0', // editor line highlight; visible without becoming a stripe
+    inactiveSelection: '#d5cbce', // editor inactive selection
     termBlack: '#141414eb', // terminal ansi black (must stay dark)
-    surface0: '#e1d7d6', // breadcrumb bg, editorCursor bg, menu, peek title
-    listActive: '#d8cbd1', // list active/focus, statusBarItem active, quickInputList focus
-    selectionBg: '#d5c7d0', // editor selection background
-    overlay0: '#c9bdc2', // sash hover, text separator, panel/sidebar border
-    surface2: '#ddd2d2', // editorGutter comment, stickyScroll hover, suggest selected
-    findRange: '#c6d3d5', // editor find range highlight (faint teal)
-    overlay1: '#e1d7d6', // checkbox, listFilter, tree inactive, settings inputs
+    surface0: '#ddd3d2', // breadcrumb bg, editorCursor bg, menu, peek title
+    listActive: '#d4c7cd', // list active/focus, statusBarItem active, quickInputList focus
+    selectionBg: '#d1c3cc', // editor selection background
+    overlay0: '#c5b9be', // sash hover, text separator, panel/sidebar border
+    surface2: '#d9cece', // editorGutter comment, stickyScroll hover, suggest selected
+    findRange: '#c2cfd1', // editor find range highlight (faint teal)
+    overlay1: '#ddd3d2', // checkbox, listFilter, tree inactive, settings inputs
     overlay2: '#c1b4b9', // various UI separators, scrollbars, borders, indent guide
     scrollActiveDark: '#8a8490', // scrollbar slider active (alpha base only)
     mauve: '#94627d', // selection, badge, picker, progress bar
-    subtext0: '#665d63', // statusBar fg, editorCodeLens, line number
+    subtext0: '#645b61', // statusBar fg, editorCodeLens, line number
     teal: '#9b2148', // keywords (soft crimson on light)
     brightCyan: '#206977', // terminal bright cyan
     brightBlue: '#23668b', // terminal bright blue
