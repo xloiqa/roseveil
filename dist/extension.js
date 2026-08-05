@@ -39,7 +39,10 @@ exports.deactivate = deactivate;
 const vscode = __importStar(require("vscode"));
 const overrides_1 = require("./overrides");
 Object.defineProperty(exports, "THEMES", { enumerable: true, get: function () { return overrides_1.THEMES; } });
-function activate(context) {
+const RETIRED_WARM_THEME = 'Roveliese Warm';
+const WARM_THEME_REPLACEMENT = 'Roveliese Dark';
+async function activate(context) {
+    await migrateRetiredWarmTheme();
     applyOverrides();
     warnIfIndentRainbowConflict();
     new IndentGuideController(context);
@@ -47,6 +50,23 @@ function activate(context) {
         if (e.affectsConfiguration('roveliese'))
             applyOverrides();
     }));
+}
+async function migrateRetiredWarmTheme() {
+    const rootConfig = vscode.workspace.getConfiguration('workbench');
+    const rootInspection = rootConfig.inspect('colorTheme');
+    if (rootInspection?.globalValue === RETIRED_WARM_THEME) {
+        await rootConfig.update('colorTheme', WARM_THEME_REPLACEMENT, vscode.ConfigurationTarget.Global);
+    }
+    if (rootInspection?.workspaceValue === RETIRED_WARM_THEME) {
+        await rootConfig.update('colorTheme', WARM_THEME_REPLACEMENT, vscode.ConfigurationTarget.Workspace);
+    }
+    for (const folder of vscode.workspace.workspaceFolders ?? []) {
+        const folderConfig = vscode.workspace.getConfiguration('workbench', folder.uri);
+        const folderInspection = folderConfig.inspect('colorTheme');
+        if (folderInspection?.workspaceFolderValue === RETIRED_WARM_THEME) {
+            await folderConfig.update('colorTheme', WARM_THEME_REPLACEMENT, vscode.ConfigurationTarget.WorkspaceFolder);
+        }
+    }
 }
 function warnIfIndentRainbowConflict() {
     const cfg = vscode.workspace.getConfiguration('roveliese.indent');
