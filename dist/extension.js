@@ -49,6 +49,9 @@ async function activate(context) {
     context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
         if (e.affectsConfiguration('roveliese'))
             applyOverrides();
+        if (e.affectsConfiguration('workbench.colorTheme')) {
+            migrateRetiredWarmTheme().catch(error => console.error('Roveliese theme migration failed:', error));
+        }
     }));
 }
 async function migrateRetiredWarmTheme() {
@@ -244,7 +247,8 @@ function getIndentGuideSettings() {
 }
 function getActiveIndentGuideTheme() {
     const themeName = vscode.workspace.getConfiguration('workbench').get('colorTheme', FALLBACK_THEME);
-    const resolvedTheme = themeName && overrides_1.THEMES[themeName] ? themeName : FALLBACK_THEME;
+    const canonicalTheme = themeName === RETIRED_WARM_THEME ? WARM_THEME_REPLACEMENT : themeName;
+    const resolvedTheme = canonicalTheme && overrides_1.THEMES[canonicalTheme] ? canonicalTheme : FALLBACK_THEME;
     return {
         palette: overrides_1.THEMES[resolvedTheme],
         preset: INDENT_GUIDE_PRESETS[resolvedTheme],
