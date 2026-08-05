@@ -40,7 +40,7 @@ const vscode = __importStar(require("vscode"));
 const overrides_1 = require("./overrides");
 Object.defineProperty(exports, "THEMES", { enumerable: true, get: function () { return overrides_1.THEMES; } });
 const RETIRED_WARM_THEME = 'Roveliese Warm';
-const WARM_THEME_REPLACEMENT = 'Roveliese Dark';
+const WARM_THEME_REPLACEMENT = 'Roveliese Light';
 async function activate(context) {
     await migrateRetiredWarmTheme();
     applyOverrides();
