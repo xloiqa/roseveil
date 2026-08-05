@@ -91,12 +91,7 @@ const INDENT_GUIDE_PRESETS = {
     'Roveliese Light': {
         colors: ['rose', 'peach', 'yellow', 'green', 'sky', 'lavender'],
         backgroundOpacity: 18,
-        lineOpacity: 60,
-    },
-    'Roveliese Warm': {
-        colors: ['rose', 'peach', 'yellow', 'green', 'sky', 'pink'],
-        backgroundOpacity: 17,
-        lineOpacity: 60,
+        lineOpacity: 32,
     },
     'Roveliese Storm': {
         colors: ['mauve', 'sapphire', 'sky', 'teal', 'lavender', 'roseLight'],

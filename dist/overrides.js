@@ -8,7 +8,6 @@ const palette_1 = require("./palette");
 exports.THEMES = {
     'Roveliese Dark': palette_1.dark,
     'Roveliese Light': palette_1.light,
-    'Roveliese Warm': palette_1.warm,
     'Roveliese Storm': palette_1.storm,
 };
 exports.ACCENT_KEYS = [

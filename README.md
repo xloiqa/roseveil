@@ -9,10 +9,6 @@
   A quiet, atmospheric theme family built around a rose identity.
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/roveliese/vscode/main/images/preview.webp"/>
-</p>
-
 ## Previews
 
 <details>
@@ -23,11 +19,6 @@
 <details>
 <summary>Light</summary>
 <img src="https://raw.githubusercontent.com/roveliese/vscode/main/images/preview-light.webp"/>
-</details>
-
-<details>
-<summary>Warm</summary>
-<img src="https://raw.githubusercontent.com/roveliese/vscode/main/images/preview-warm.webp"/>
 </details>
 
 <details>
@@ -50,7 +41,6 @@ After installing, open the Command Palette and select **Preferences: Color Theme
 
 - **Roveliese Dark**
 - **Roveliese Light**
-- **Roveliese Warm**
 - **Roveliese Storm**
 
 The product icon theme is optional and separate from the color theme. To enable it, open the Command Palette and select **Preferences: Product Icon Theme**, then choose **Roveliese Product Icons**.
@@ -127,7 +117,7 @@ For fine-grained overrides, use VS Code's built-in settings directly. These stac
 
 Roveliese centers on a quiet editor and a visible rose identity. Accents appear only where the interface needs emphasis: active controls, focus rings, selections, diagnostics, errors. Syntax stays readable without carrying the brand color everywhere.
 
-The mascot sets the visual temperature: a white kitsune with rose-pink flame wisps and icy cyan eyes. That contrast runs through all four variants: rose warmth, cool highlights, restrained surfaces.
+The mascot sets the visual temperature: a white kitsune with rose-pink flame wisps and icy cyan eyes. That contrast runs through all three variants: rose warmth, cool highlights, restrained surfaces.
 
 Each variant keeps the same Roveliese character while adjusting its contrast, temperature, and syntax balance for a different reading environment.
 

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.storm = exports.warm = exports.light = exports.dark = void 0;
+exports.storm = exports.light = exports.dark = void 0;
 exports.dark = {
     crust: '#0f0f14',
     darker: '#101017',
@@ -61,120 +61,62 @@ exports.dark = {
 };
 exports.light = {
     // Backgrounds — lightest to darkest (inverted polarity vs dark)
-    crust: '#eae3e1', // inputs / quickInput (lightest surface)
-    darker: '#d8cecf', // unfocused inactive tab (recedes)
-    mantle: '#dbd1d2', // sidebar, activity bar, panel, title bar, tabs header
+    crust: '#e1d9d7', // inputs / quickInput (lightest surface)
+    darker: '#c8bcbe', // unfocused inactive tab (recedes)
+    mantle: '#cec3c4', // sidebar, activity bar, panel, title bar, tabs header
     darkest: '#2a2330', // shadow + dark contrast-fg on accent backgrounds
-    base: '#e4dcda', // editor bg, terminal bg, minimap; low-glare matte paper
+    base: '#dbd3d1', // editor bg, terminal bg, minimap; low-glare matte paper
     buttonFg: '#fff7f7', // button / extension button foreground
-    listHover: '#dfd5d6', // list hover, tab hover, statusBar item hover
-    surface1: '#ded5d4', // hover widgets, breadcrumb picker, inlay hints; distinct from editor
-    lineHighlight: '#dad1d0', // editor line highlight; visible without becoming a stripe
-    inactiveSelection: '#d5cbce', // editor inactive selection
+    listHover: '#d4c9ca', // list hover, tab hover, statusBar item hover
+    surface1: '#d2c8c7', // hover widgets, breadcrumb picker, inlay hints; distinct from editor
+    lineHighlight: '#d0c6c5', // editor line highlight; visible without becoming a stripe
+    inactiveSelection: '#c8bdc1', // editor inactive selection
     termBlack: '#141414eb', // terminal ansi black (must stay dark)
-    surface0: '#ddd3d2', // breadcrumb bg, editorCursor bg, menu, peek title
-    listActive: '#d4c7cd', // list active/focus, statusBarItem active, quickInputList focus
-    selectionBg: '#d1c3cc', // editor selection background
-    overlay0: '#c5b9be', // sash hover, text separator, panel/sidebar border
-    surface2: '#d9cece', // editorGutter comment, stickyScroll hover, suggest selected
-    findRange: '#c2cfd1', // editor find range highlight (faint teal)
-    overlay1: '#ddd3d2', // checkbox, listFilter, tree inactive, settings inputs
-    overlay2: '#c1b4b9', // various UI separators, scrollbars, borders, indent guide
+    surface0: '#d0c5c4', // breadcrumb bg, editorCursor bg, menu, peek title
+    listActive: '#c2b4ba', // list active/focus, statusBarItem active, quickInputList focus
+    selectionBg: '#beb0b8', // editor selection background
+    overlay0: '#b8acb0', // sash hover, text separator, panel/sidebar border
+    surface2: '#cbc0c0', // editorGutter comment, stickyScroll hover, suggest selected
+    findRange: '#b7c4c6', // editor find range highlight (faint teal)
+    overlay1: '#d0c5c4', // checkbox, listFilter, tree inactive, settings inputs
+    overlay2: '#b4a7ac', // various UI separators, scrollbars, borders, indent guide
     scrollActiveDark: '#8a8490', // scrollbar slider active (alpha base only)
-    mauve: '#94627d', // selection, badge, picker, progress bar
-    subtext0: '#645b61', // statusBar fg, editorCodeLens, line number
-    teal: '#9b2148', // keywords (soft crimson on light)
-    brightCyan: '#206977', // terminal bright cyan
-    brightBlue: '#23668b', // terminal bright blue
-    brightGreen: '#1b6e51', // terminal bright green
-    sky: '#23668b', // cursor, links, tree guide (darker teal for light)
+    mauve: '#895873', // selection, badge, picker, progress bar
+    subtext0: '#574f54', // statusBar fg, editorCodeLens, line number
+    teal: '#92203f', // keywords (soft crimson on light)
+    brightCyan: '#185f6d', // terminal bright cyan
+    brightBlue: '#1b5d80', // terminal bright blue
+    brightGreen: '#126447', // terminal bright green
+    sky: '#1b5d80', // cursor, links, tree guide (darker teal for light)
     htmlPunct: '#141414ad', // HTML tag punctuation
     breakpointUnverified: '#9a6781', // debug icon unverified breakpoint
-    subtext1: '#62595f', // disabled fg, panelTitle inactive, inlay type
-    green: '#166e50', // macros, decorators, added resources, strings
-    rose: '#a25d6e', // button primary background
-    lavender: '#6550aa', // property, constructor, method specials
+    subtext1: '#554d52', // disabled fg, panelTitle inactive, inlay type
+    green: '#0e6446', // macros, decorators, added resources, strings
+    rose: '#995466', // button primary background
+    lavender: '#5c479d', // property, constructor, method specials
     brightWhite: '#3c3640', // terminal bright white (dark on light bg: 9:1 vs #f8f3f3; #ffffff was invisible 1.10:1)
-    roseHover: '#9c5868', // button hover background
-    buttonSecondaryHover: '#c1b6ba', // secondary button hover background
-    roseMid: '#a66f7f', // focus border
-    red: '#b52449', // errors, deleted resources
+    roseHover: '#914c5e', // button hover background
+    buttonSecondaryHover: '#b8acb0', // secondary button hover background
+    roseMid: '#966071', // focus border
+    red: '#aa1f43', // errors, deleted resources
     neutral: '#242024cc', // C/C++ neutrals, namespaces
     text: '#242024eb', // main foreground
     parameter: '#242024cc', // semantic parameter token
     e4base: '#141414', // must be dark (used with alpha for comments/brackets)
-    pink: '#7a4d9a', // strings, CSS values, template literals
-    peachWarm: '#934a23', // integers, units, JS functions
-    brightYellow: '#825817', // terminal bright yellow
-    peach: '#91502d', // functions, self param, method declarations
+    pink: '#70448e', // strings, CSS values, template literals
+    peachWarm: '#87421e', // integers, units, JS functions
+    brightYellow: '#76500f', // terminal bright yellow
+    peach: '#854625', // functions, self param, method declarations
     tabActiveFg: '#1f1a1c', // tab active foreground (dark for light bg)
     sponsor: '#c0568f', // extension sponsor icon
-    roseLight: '#a05566', // icon fg, active tab border, active line number (dark rose)
-    errorRed: '#b52449', // PHP illegal, error token
-    brightMagenta: '#963e75', // terminal bright magenta
-    brightRed: '#aa384e', // terminal bright red
-    metaTag: '#825817', // meta.tag
-    yellow: '#825817', // numbers, warnings, constants, git modified
-    sapphire: '#175c86', // class names, CSS property names, blue links
+    roseLight: '#934d60', // icon fg, active tab border, active line number (dark rose)
+    errorRed: '#aa1f43', // PHP illegal, error token
+    brightMagenta: '#89356a', // terminal bright magenta
+    brightRed: '#9f3046', // terminal bright red
+    metaTag: '#76500f', // meta.tag
+    yellow: '#76500f', // numbers, warnings, constants, git modified
+    sapphire: '#10547d', // class names, CSS property names, blue links
     white: '#ffffff', // badge fg, find match fg
-};
-exports.warm = {
-    crust: '#120e0f',
-    darker: '#151112',
-    mantle: '#191415',
-    darkest: '#1c1617',
-    base: '#1f191a',
-    buttonFg: '#1a0f10',
-    listHover: '#282021',
-    surface1: '#2a2021',
-    lineHighlight: '#292122',
-    inactiveSelection: '#35292b',
-    termBlack: '#241c1deb',
-    surface0: '#28201f',
-    listActive: '#352729',
-    selectionBg: '#402f30',
-    overlay0: '#423033',
-    surface2: '#342829',
-    findRange: '#443633',
-    overlay1: '#514044',
-    overlay2: '#66535a',
-    scrollActiveDark: '#80656b',
-    mauve: '#876a76',
-    subtext0: '#92777a',
-    teal: '#78cbc8',
-    brightCyan: '#6ccfc5',
-    brightBlue: '#78a8f3',
-    brightGreen: '#8ccf8a',
-    sky: '#d59a72',
-    htmlPunct: '#a99691',
-    breakpointUnverified: '#a1737a',
-    subtext1: '#ad9291',
-    green: '#b0cc78', // warmer yellow-green vs Dark #a8cc7c (was 1:1 copy, now warm-shifted)
-    rose: '#b87968',
-    lavender: '#b1a0f0',
-    brightWhite: '#dfd0c9',
-    roseHover: '#c58a76',
-    buttonSecondaryHover: '#6c555b',
-    roseMid: '#d19a82',
-    red: '#d07b88',
-    neutral: '#d0c7c2',
-    text: '#ead9cf',
-    parameter: '#dbcac2',
-    e4base: '#e3d5cc',
-    pink: '#e89bc8', // warm rose-pink vs Dark #e394dc (was 1:1 copy, now warmer/less magenta)
-    peachWarm: '#e5b883',
-    brightYellow: '#e6c981',
-    peach: '#e9a37d',
-    tabActiveFg: '#f4e7df',
-    sponsor: '#d99a8a',
-    roseLight: '#e7b49c',
-    errorRed: '#d45f73',
-    brightMagenta: '#f0a9d8',
-    brightRed: '#f07b93',
-    metaTag: '#e9bd80',
-    yellow: '#edc66d',
-    sapphire: '#8abfff',
-    white: '#ffffff',
 };
 exports.storm = {
     crust: '#0d1018',
