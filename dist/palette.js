@@ -61,61 +61,61 @@ exports.dark = {
 };
 exports.light = {
     // Backgrounds — lightest to darkest (inverted polarity vs dark)
-    crust: '#e1d9d7', // inputs / quickInput (lightest surface)
-    darker: '#c8bcbe', // unfocused inactive tab (recedes)
-    mantle: '#cec3c4', // sidebar, activity bar, panel, title bar, tabs header
+    crust: '#e9e2e0', // inputs / quickInput (lightest floating surface)
+    darker: '#d1c6c8', // unfocused inactive tab (recedes)
+    mantle: '#d8cecf', // sidebar, activity bar, panel, title bar, tabs header
     darkest: '#2a2330', // shadow + dark contrast-fg on accent backgrounds
-    base: '#dbd3d1', // editor bg, terminal bg, minimap; low-glare matte paper
+    base: '#e2dad8', // editor bg, terminal bg, minimap; warm neutral paper
     buttonFg: '#fff7f7', // button / extension button foreground
-    listHover: '#d4c9ca', // list hover, tab hover, statusBar item hover
-    surface1: '#d2c8c7', // hover widgets, breadcrumb picker, inlay hints; distinct from editor
-    lineHighlight: '#d0c6c5', // editor line highlight; visible without becoming a stripe
-    inactiveSelection: '#c8bdc1', // editor inactive selection
+    listHover: '#d3c9ca', // quiet hover against chrome
+    surface1: '#dcd3d2', // hover widgets, breadcrumb picker, inlay hints
+    lineHighlight: '#d7cecd', // visible without becoming a stripe
+    inactiveSelection: '#cec2c6', // editor inactive selection
     termBlack: '#141414eb', // terminal ansi black (must stay dark)
-    surface0: '#d0c5c4', // breadcrumb bg, editorCursor bg, menu, peek title
-    listActive: '#c2b4ba', // list active/focus, statusBarItem active, quickInputList focus
-    selectionBg: '#beb0b8', // editor selection background
-    overlay0: '#b8acb0', // sash hover, text separator, panel/sidebar border
-    surface2: '#cbc0c0', // editorGutter comment, stickyScroll hover, suggest selected
-    findRange: '#b7c4c6', // editor find range highlight (faint teal)
-    overlay1: '#d0c5c4', // checkbox, listFilter, tree inactive, settings inputs
-    overlay2: '#b4a7ac', // various UI separators, scrollbars, borders, indent guide
+    surface0: '#dacfd0', // breadcrumb bg, editorCursor bg, menu, peek title
+    listActive: '#c6b8bf', // list active/focus, statusBarItem active, quickInputList focus
+    selectionBg: '#c4b5bd', // editor selection background
+    overlay0: '#c1b5b9', // sash hover, text separator, panel/sidebar border
+    surface2: '#d3c8c9', // editorGutter comment, stickyScroll hover, suggest selected
+    findRange: '#c1ced0', // editor find range highlight (faint teal)
+    overlay1: '#dacfd0', // checkbox, listFilter, tree inactive, settings inputs
+    overlay2: '#b9acb1', // various UI separators, scrollbars, borders, indent guide
     scrollActiveDark: '#8a8490', // scrollbar slider active (alpha base only)
-    mauve: '#895873', // selection, badge, picker, progress bar
-    subtext0: '#574f54', // statusBar fg, editorCodeLens, line number
-    teal: '#92203f', // keywords (soft crimson on light)
-    brightCyan: '#185f6d', // terminal bright cyan
-    brightBlue: '#1b5d80', // terminal bright blue
-    brightGreen: '#126447', // terminal bright green
-    sky: '#1b5d80', // cursor, links, tree guide (darker teal for light)
+    mauve: '#906078', // selection, badge, picker, progress bar
+    subtext0: '#5d555a', // statusBar fg, editorCodeLens, line number
+    teal: '#246568', // keywords/operators: dark counterpart of Dark teal
+    brightCyan: '#1e6670', // terminal bright cyan
+    brightBlue: '#24658b', // terminal bright blue
+    brightGreen: '#286b49', // terminal bright green
+    sky: '#256778', // cursor, links, informational contrast
     htmlPunct: '#141414ad', // HTML tag punctuation
     breakpointUnverified: '#9a6781', // debug icon unverified breakpoint
-    subtext1: '#554d52', // disabled fg, panelTitle inactive, inlay type
-    green: '#0e6446', // macros, decorators, added resources, strings
-    rose: '#995466', // button primary background
-    lavender: '#5c479d', // property, constructor, method specials
-    brightWhite: '#3c3640', // terminal bright white (dark on light bg: 9:1 vs #f8f3f3; #ffffff was invisible 1.10:1)
-    roseHover: '#914c5e', // button hover background
-    buttonSecondaryHover: '#b8acb0', // secondary button hover background
-    roseMid: '#966071', // focus border
-    red: '#aa1f43', // errors, deleted resources
-    neutral: '#242024cc', // C/C++ neutrals, namespaces
+    subtext1: '#5a5257', // disabled fg, panelTitle inactive, inlay type
+    green: '#316843', // macros, decorators, added resources
+    rose: '#9c586a', // button primary background
+    lavender: '#63509c', // properties and method specials
+    brightWhite: '#403941', // terminal bright white (dark on light background)
+    roseHover: '#934f61', // button hover background
+    buttonSecondaryHover: '#c1b5b9', // secondary button hover background
+    roseMid: '#9f697a', // focus border
+    red: '#ad2748', // errors, deleted resources
+    neutral: '#2b272bcc', // C/C++ neutrals, namespaces
     text: '#242024eb', // main foreground
-    parameter: '#242024cc', // semantic parameter token
+    parameter: '#2b272bcc', // semantic parameter token
     e4base: '#141414', // must be dark (used with alpha for comments/brackets)
-    pink: '#70448e', // strings, CSS values, template literals
-    peachWarm: '#87421e', // integers, units, JS functions
-    brightYellow: '#76500f', // terminal bright yellow
-    peach: '#854625', // functions, self param, method declarations
-    tabActiveFg: '#1f1a1c', // tab active foreground (dark for light bg)
-    sponsor: '#c0568f', // extension sponsor icon
-    roseLight: '#934d60', // icon fg, active tab border, active line number (dark rose)
-    errorRed: '#aa1f43', // PHP illegal, error token
-    brightMagenta: '#89356a', // terminal bright magenta
-    brightRed: '#9f3046', // terminal bright red
-    metaTag: '#76500f', // meta.tag
-    yellow: '#76500f', // numbers, warnings, constants, git modified
-    sapphire: '#10547d', // class names, CSS property names, blue links
+    pink: '#8b416f', // strings: dark rose-magenta counterpart of Dark pink
+    peachWarm: '#75571e', // methods, integers and units
+    brightYellow: '#785913', // terminal bright yellow
+    peach: '#8f492a', // functions and declarations
+    tabActiveFg: '#211c1f', // tab active foreground (dark for light bg)
+    sponsor: '#bd5388', // extension sponsor icon
+    roseLight: '#9b5668', // icon fg, active tab border, active line number
+    errorRed: '#ad2748', // PHP illegal, error token
+    brightMagenta: '#873e70', // terminal bright magenta
+    brightRed: '#a8324d', // terminal bright red
+    metaTag: '#785913', // meta.tag
+    yellow: '#785913', // constants, warnings, git modified
+    sapphire: '#1f5f88', // classes/types and blue links
     white: '#ffffff', // badge fg, find match fg
 };
 exports.storm = {
