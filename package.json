@@ -3,7 +3,7 @@
     "publisher": "Roveliese",
     "displayName": "Roveliese for VS Code",
     "description": "Atmospheric rose theme for VS Code",
-    "version": "3.7.4",
+    "version": "3.7.5",
     "engines": {
         "vscode": "^1.70.0"
     },
